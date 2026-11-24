@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Coelho | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <nav class="menu">
+      <a class="logo" href="#inicio">João Henrique D.Coelho</a>
+      <ul class="menu-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <p class="etiqueta">[Desenvolvimento de Sistemas]</p>
+      <h1>Não existe nada fora de você que possa te tornar melhor... Tudo está dentro de você.</h1>
+      <p class="hero-texto">Quero me tornar um desenvolvedor renomado dentro do mercado de trabalho.</p>
+      <div class="hero-botoes">
+        <a class="botao" href="#contato">Baixar currículo</a>
+        <a class="botao botao-contorno" href="#projetos">Ver projetos</a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-conteudo">
+        <!-- Se tiver foto, descomente e ajuste o alt:
+        <img src="imagens/foto.jpg" alt="[Descreva a foto]">
+        -->
+        <img src="img/unnamed.jpg" alt="[Descreva a foto]">
+        <p>Meu curso de Analíse e Desenvolvimento de Sistemas me preparou para criar soluções inovadoras e eficientes.</p>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="habilidades-lista">
+        <li>Responsável</li>
+        <li>Comunicativo</li>
+        <li>Trabalho em equipe</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projetos-grade">
+        <article class="cartao">
+          <h3>Hydra Senhas</h3>
+          <p>Aplicativo de segurança para gerenciamento de senhas.</p>
+          <p class="cartao-tecnologias">Linguagem: Python e Vs Code</p>
+        </article>
+        <article class="cartao">
+          <h3>Gerenciamento de estacionamento e vagas.</h3>
+          <p>Sistemas de gerenciamento para estacionamentos e alocação de vagas inteligente.</p>
+          <p class="cartao-tecnologias">Esp32 e sensores.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button class="botao" type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 João Henrique D.Coelho</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
