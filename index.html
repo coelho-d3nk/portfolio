@@ -3,53 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seu Nome | Portfólio</title>
+  <title>João Coelho | Portfólio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <!-- links para #inicio, #sobre, #habilidades, #projetos, #contato -->
+  <header class="topo">
+    <nav class="menu">
+      <a class="logo" href="#inicio">João Coelho</a>
+      <ul class="menu-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section id="inicio">
-      <!-- seu nome, sua área, uma frase e o botão "Baixar currículo" -->
+
+    <section id="inicio" class="hero">
+      <p class="etiqueta">[Sua área, ex.: Desenvolvimento de Sistemas]</p>
+      <h1>[Sua frase de impacto]</h1>
+      <p class="hero-texto">[Uma frase curta sobre o que você faz ou quer fazer]</p>
+      <div class="hero-botoes">
+        <a class="botao" href="#contato">Baixar currículo</a>
+        <a class="botao botao-contorno" href="#projetos">Ver projetos</a>
+      </div>
     </section>
 
     <section id="sobre">
-      <!-- título + 2 ou 3 frases (foto com alt, se quiser) -->
+      <h2>Sobre mim</h2>
+      <div class="sobre-conteudo">
+        <!-- Se tiver foto, descomente e ajuste o alt:
+        <img src="imagens/foto.jpg" alt="[Descreva a foto]">
+        -->
+        <p>[2 ou 3 frases sobre você e seu curso]</p>
+      </div>
     </section>
 
     <section id="habilidades">
-      <!-- título + lista (ul) com 3 a 6 itens -->
+      <h2>Habilidades</h2>
+      <ul class="habilidades-lista">
+        <li>[Habilidade 1]</li>
+        <li>[Habilidade 2]</li>
+        <li>[Habilidade 3]</li>
+      </ul>
     </section>
 
     <section id="projetos">
-      <!-- título + 2 a 4 projetos, cada um com título e descrição -->
+      <h2>Projetos</h2>
+      <div class="projetos-grade">
+        <article class="cartao">
+          <h3>[Nome do projeto 1]</h3>
+          <p>[O que é, em 1 ou 2 frases]</p>
+          <p class="cartao-tecnologias">[Tecnologias usadas]</p>
+        </article>
+        <article class="cartao">
+          <h3>[Nome do projeto 2]</h3>
+          <p>[O que é, em 1 ou 2 frases]</p>
+          <p class="cartao-tecnologias">[Tecnologias usadas]</p>
+        </article>
+      </div>
     </section>
 
     <section id="contato">
-      <!-- título + formulário -->
-      <form>
+      <h2>Contato</h2>
+      <form class="formulario">
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome">
+        <input type="text" id="nome" name="nome" required>
 
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
 
         <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem"></textarea>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button class="botao" type="submit">Enviar</button>
       </form>
     </section>
+
   </main>
 
-  <footer>
-    <!-- © 2026 + seu nome -->
+  <footer class="rodape">
+    <p>© 2026 [Seu Nome]</p>
   </footer>
 
   <script src="script.js"></script>
